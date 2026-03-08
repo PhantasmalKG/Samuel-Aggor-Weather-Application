@@ -1,0 +1,11 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+.weather_app{
+  min-height: 100vh;
+  display: grid;
+  background-color: rgb(64, 59, 59);
+}
