@@ -9,7 +9,9 @@ function App() {
   
   return (
     <div className="weather_app">
-      <div className="wrapper"></div>
+      <div className="wrapper">
+        <input></input>
+      </div>
     </div>
   )
 }
