@@ -9,10 +9,9 @@ function App() {
   
   return (
     <div className="weather_app">
-
+      <div className="wrapper"></div>
     </div>
   )
 }
 
 export default App
-n
