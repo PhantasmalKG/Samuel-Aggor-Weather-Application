@@ -5,7 +5,44 @@
 }
 
 .weather_app{
-  min-height: 100vh;
-  display: grid;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
   background-color: rgb(64, 59, 59);
+}
+
+.app_wrapper{
+  max-width: 1440px;
+  margin: 0px auto;
+}
+
+.banner_wrapper{
+  width: 100%;
+  height: 20%;
+  margin: 20px auto;
+  background-color: rgb(208, 147, 57);
+}
+
+.logo{
+  
+}
+
+.input_containter{
+
+}
+
+.light_dark_mode_btn{
+
+}
+
+.query_city_weather_display{
+
+}
+
+.hourly_weather_updates{
+
+}
+
+.seven_day_forecast{
+  
 }
