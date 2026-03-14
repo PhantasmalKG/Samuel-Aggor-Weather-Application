@@ -12,7 +12,7 @@
 }
 
 .app_wrapper{
-  max-width: 1440px;
+  max-width: 100%;
   margin: 0px auto;
 }
 
@@ -23,11 +23,11 @@
   background-color: rgb(208, 147, 57);
 }
 
-.logo{
+/* .logo{
   
 }
 
-.input_containter{
+.input_container{
 
 }
 
@@ -45,4 +45,4 @@
 
 .seven_day_forecast{
   
-}
+} */

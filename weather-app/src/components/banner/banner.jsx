@@ -1,14 +1,18 @@
-import React from 'react'
+import React from 'react';
+import QueryResults from "../query/queryresults";
+import "../banner/banner.css";
 
 const banner = () => {
   return (
-    <div>banner
-        <header>
-             <div className="logo"></div>
+    <div>
+        <header className='banner_container'>
+             <div className="logo">LOGO HERE</div>
           <div className="input_container">
-            <input></input>
+            <QueryResults />
           </div>
-          <div className="light_dark_mode_btn"></div>
+          <div className="light_dark_mode_btn">
+            
+          </div>
         
         </header>
     </div>

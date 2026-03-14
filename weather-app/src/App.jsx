@@ -1,5 +1,6 @@
-// import React, {useState} from "react"
-// import axios from "axios"
+import React from "react"
+
+import Banner from "./components/banner/banner"
 
 function App() {
   // const [weatherData, setWeatherData] = useState({});
@@ -8,7 +9,7 @@ function App() {
   return (
     <div className="weather_app">
       <div className="app_wrapper">
-        //Banner
+        <Banner/>
          
         <div className="query_city_weather_display"></div>
         <div className="hourly_weather_updates"></div>
