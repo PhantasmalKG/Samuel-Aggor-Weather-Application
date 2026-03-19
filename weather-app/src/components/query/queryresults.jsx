@@ -10,12 +10,17 @@ const QueryResults = ({onQueryChange}) => {
     onQueryChange(query);
   }
 
+  const loadOptions = (inputValue) => {
+    return  
+  }
+
   return (
     <AsyncPaginate
     placeholder="Please enter the location to view the weather in that area."
     debounceTimeout={400}
     value={query}
     onChange={handleOnChange} />
+    loadOptions={}
   )
 }
 
