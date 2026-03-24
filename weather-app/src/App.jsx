@@ -1,6 +1,6 @@
-import React from "react"
+import React from "react";
 
-import Banner from "./components/banner/banner"
+import Banner from "./components/banner/banner";
 
 function App() {
   // const [weatherData, setWeatherData] = useState({});
@@ -8,23 +8,46 @@ function App() {
 
   return (
     <div className="weather_app">
-      <div className="app_wrapper">
-        <Banner/>
+      <Banner />
+      <div className="borders app_wrapper">
+        <p>Current forecast in: </p>
+        <div className="borders query_city_weather_display">
+          <div className="left">
+            <div className="city_title">
+              <h1>Southgate</h1>
+            </div>
+            <div className="city_temp">
+              <h1>88 deg</h1>
+            </div>
+          </div>
+          <div className="middle">
+            
+            
+            <div className="summary">
+            <p>High: 94 deg</p>
+            <p>Low: 78 deg</p>
+          </div>
          
-        <div className="query_city_weather_display">
-          <div className="city_title">
-            <p>Southgate</p>
           </div>
-          <div className="city_temp">
-            <h1>88</h1>
+          <div className="right">
+            <div className="actual_temp">
+              <p>Actual Temp: 55</p>
+            </div>
+            <div className="humidity">
+              <p>Humidity: 20%</p>
+            </div>
+            <div className="wind_speed">
+              <p>The wind speed is: 12MPH</p>
+            </div>
           </div>
-          <div className="summary">
-          <p>The high today is 94.</p>
-          </div>
-
         </div>
-        <div className="hourly_weather_updates"></div>
-        <div className="seven_day_forecast"></div>
+        <div className="borders hourly_weather_updates">
+          <p>Hourly Forecast: </p>
+        </div>
+        <div className="borders seven_day_forecast">
+          <p>Seven day Forecast: </p>
+        </div>
+        
       </div>
     </div>
   );

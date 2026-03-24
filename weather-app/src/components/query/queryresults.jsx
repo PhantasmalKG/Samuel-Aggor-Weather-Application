@@ -8,11 +8,13 @@ const QueryResults = ({onQueryChange}) => {
   const handleOnChange = (searchData) => {
     setQuery(searchData);
     onQueryChange(query);
-  }
+  };
 
   const loadOptions = (inputValue) => {
-    return  
-  }
+    return fetch(
+      '${}/'
+    )
+  };
 
   return (
     <AsyncPaginate
@@ -20,7 +22,7 @@ const QueryResults = ({onQueryChange}) => {
     debounceTimeout={400}
     value={query}
     onChange={handleOnChange} />
-    loadOptions={}
+    // loadOptions={}
   )
 }
 

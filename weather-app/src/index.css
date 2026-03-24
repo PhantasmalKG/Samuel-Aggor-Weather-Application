@@ -7,22 +7,44 @@
 .weather_app{
   height: 100vh;
   width: 100%;
-  position: fixed;
+  position: relative;
   background-color: rgb(64, 59, 59);
+  color: white;
 }
 
 .app_wrapper{
-  max-width: 100%;
-  margin: 0px auto;
+  width: 95%;
+  border: 3px solid white;
+  margin: 40px auto;
+  padding: 3rem;
 }
 
-.banner_wrapper{
-  width: 100%;
-  height: 20%;
-  margin: 20px auto;
-  background-color: rgb(208, 147, 57);
+.query_city_weather_display{
+  padding: 3rem 4rem;
+  margin:2rem auto;
+  display:flex;
+  justify-content: space-between;
 }
 
+hr{
+  transform: rotate(90deg);
+}
+
+.middle{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:2rem;
+  border-left: 10px solid white;
+  border-right: 10px solid white;
+}
+
+/* Suuport classes */
+
+.borders{
+  border: 5px solid white;
+  border-radius: 1rem;
+}
 /* .logo{
   
 }
@@ -46,3 +68,14 @@
 .seven_day_forecast{
   
 } */
+
+p{
+  font-size: 2.5rem;
+}
+
+h1{
+  font-size: 5rem;
+}
+h2{
+  font-size: 4rem;
+}
