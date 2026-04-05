@@ -4,7 +4,7 @@ import Banner from "./components/banner/banner";
 
 function App() {
   // const [weatherData, setWeatherData] = useState({});
-  
+  // const [location, setLocation] = useState('');
 
   return (
     <div className="weather_app">
