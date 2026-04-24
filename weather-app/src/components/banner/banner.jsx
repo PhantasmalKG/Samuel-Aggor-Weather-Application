@@ -1,22 +1,18 @@
-import React from 'react';
+import React from "react";
+import Logo from "../logo/logo";
+import Options from "../options/options";
 import QueryResults from "../query/queryresults";
+
 import "../banner/banner.css";
 
 const banner = () => {
   return (
-    <div>
-        <header className='banner_container'>
-             <div className="logo">LOGO HERE</div>
-          <div className="input_container">
-            <QueryResults />
-          </div>
-          <div className="light_dark_mode_btn">
-            
-          </div>
-        
-        </header>
-    </div>
-  )
-}
+    <header className="banner_container">
+      <Logo />
+      <QueryResults />
+      <Options />
+    </header>
+  );
+};
 
-export default banner
+export default banner;

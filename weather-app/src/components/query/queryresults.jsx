@@ -1,29 +1,29 @@
-import React, {useState} from "react";
-import { AsyncPaginate } from "react-select-async-paginate";
+import React, { use, useState, useEffect } from "react";
 
-const QueryResults = ({onQueryChange}) => {
+const QueryResults = () => {
+  const [weatherData, setWeatherData] = useState(null);
+  const [error, setError] = useState(null);
+  // const [locationQuery, setLocationQuery] = useState("");
+  // const [data, setData] = useState(null);
 
-  const [query, setQuery] = useState(null);
-
-  const handleOnChange = (searchData) => {
-    setQuery(searchData);
-    onQueryChange(query);
-  };
-
-  const loadOptions = (inputValue) => {
-    return fetch(
-      '${}/'
-    )
-  };
+  
 
   return (
-    <AsyncPaginate
-    placeholder="Please enter the location to view the weather in that area."
-    debounceTimeout={400}
-    value={query}
-    onChange={handleOnChange} />
-    // loadOptions={}
-  )
-}
+    <div className="searchbar-container">
+      <div className="search-icon">
+        <i className="bi bi-search"></i>
+      </div>
+      <div className="input-container">
+        <input
+          placeholder="Please enter the location to view the weather in that area."
+          value={""}
+          // onChange={(event) => setLocationQuery(event.target.value)}
+          // onKeyDown={queryWeather}
+          type="text"
+        />
+      </div>
+    </div>
+  );
+};
 
-export default QueryResults
+export default QueryResults;

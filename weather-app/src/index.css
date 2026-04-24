@@ -39,35 +39,27 @@ hr{
   border-right: 10px solid white;
 }
 
-/* Suuport classes */
+/* Support classes */
 
 .borders{
-  border: 5px solid white;
+  border: solid 5px white;
   border-radius: 1rem;
 }
-/* .logo{
+
+.light_theme{
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border: solid 5px rgb(0, 0, 0);
+}
+
+.dark_theme{
+  background-color: rgb(16, 16, 16);
+  color: white;
   
 }
 
-.input_container{
 
-}
 
-.light_dark_mode_btn{
-
-}
-
-.query_city_weather_display{
-
-}
-
-.hourly_weather_updates{
-
-}
-
-.seven_day_forecast{
-  
-} */
 
 p{
   font-size: 2.5rem;
