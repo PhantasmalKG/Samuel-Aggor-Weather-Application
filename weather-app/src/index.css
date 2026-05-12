@@ -71,3 +71,12 @@ h1{
 h2{
   font-size: 4rem;
 }
+
+.banner_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 5px solid white;
+    width: 100%;
+    height: 88px;
+}

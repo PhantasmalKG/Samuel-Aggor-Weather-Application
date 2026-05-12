@@ -31,11 +31,16 @@ export const useDataRetrieval = (city) => {
                 const result = await response.json();
                 setData(result);
 
+
             } catch (error) {
-                setError(error);
+                if (error.name !== 'AbortError') {
+                    setError(error.message);
+                }
             } finally {
                 setLoading(false);
             }
+
+            
         };
 
         fetchWeatherData();
@@ -49,6 +54,7 @@ export const useDataRetrieval = (city) => {
 
 
   return (
-    <div>useDataRetrieval</div>
+    console.log(data),
+    { data, loading, error }
   )
 }
