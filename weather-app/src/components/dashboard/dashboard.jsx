@@ -1,11 +1,11 @@
 import React, {useState} from 'react'
-
 import Logo from '../logo/logo'
 import Options from '../options/options'
 import {Searchbar} from '../Searchbar/Searchbar'
 import { useDataRetrieval } from '../../hooks/useDataRetrieval'
 import { WeatherDisplay } from '../WeatherDisplay/WeatherDisplay'
 import { Footer } from '../Footer/Footer'
+
 
 
 function Dashboard() {

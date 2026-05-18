@@ -6,9 +6,7 @@ export const Searchbar = ({onQueryChange}) => {
     //useState Hooks
     const [input, setInput] = useState("");
    
-
-    //Destructure the data, loading, and error states from the custom hook
-    
+    //Handle search function
     const handleSearch = (event) => {
         event.preventDefault();
 

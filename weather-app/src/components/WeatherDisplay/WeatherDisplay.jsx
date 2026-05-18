@@ -14,27 +14,27 @@ export const WeatherDisplay = ({ city, data, loading, error }) => {
               <h1>{city ? city : "Please enter a city."}</h1>
             </div>
             <div className="city_temp">
-              <h1>88 deg</h1>
+              <h1>{Math.round(weatherData?.temperature)}°</h1>
             </div>
           </div>
           <div className="middle">
 
 
             <div className="summary">
-            <p>High: 94 deg</p>
-            <p>Low: 78 deg</p>
+            <p>High: N/A</p>
+            <p>Low: N/A</p>
           </div>
 
           </div>
           <div className="right">
             <div className="actual_temp">
-              <p>Actual Temp: 55</p>
+               <p>Actual Temp: {Math.round(weatherData?.temperatureApparent)}°</p> 
             </div>
             <div className="humidity">
-              <p>Humidity: 20%</p>
+              <p>Humidity: {Math.round(weatherData?.humidity)}%</p>
             </div>
             <div className="wind_speed">
-              <p>The wind speed is: 12MPH</p>
+              <p>Wind speed: {Math.round(weatherData?.windSpeed)} mph</p>
             </div>
           </div>
         </div>

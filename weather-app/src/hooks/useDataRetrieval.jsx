@@ -3,7 +3,7 @@ import {useState, useEffect} from 'react'
 export const useDataRetrieval = (city) => {
 
     //useState Hooks     
-    const [data, setData] = useState(null);
+    const [data, setData] = useState("");
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
 
