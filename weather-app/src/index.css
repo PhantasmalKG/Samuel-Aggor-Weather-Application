@@ -30,14 +30,7 @@ hr{
   transform: rotate(90deg);
 }
 
-.middle{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding:2rem;
-  border-left: 10px solid white;
-  border-right: 10px solid white;
-}
+
 
 /* Support classes */
 
@@ -83,10 +76,33 @@ h2{
 }
 
 /* Weather Display Styles */
-.city_title{
+.left, .middle, .right{
+    background-color: rgb(113, 1, 107);
+    border-radius: 3rem;
+    display: flex;
+    flex-direction: column;
     font-size: 3rem;
     font-weight: bold;
+    width: 33%;
+    padding: 2rem;
+}
 
-
+.left{
+  align-items: flex-start;
 
 }
+
+
+.middle{
+  display: flex;
+  justify-content: space-between;
+  gap:4rem;
+  align-items: center;
+  padding:2rem;
+  
+}
+
+.right{
+  align-items: flex-start;
+}
+

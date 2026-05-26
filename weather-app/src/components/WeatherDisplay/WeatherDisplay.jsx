@@ -1,8 +1,10 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 export const WeatherDisplay = ({ city, data, loading, error }) => {
 
+  const [days, setDays] = useState(["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]);
   const weatherData = data?.data?.values;
+
 
 
   return (
@@ -21,8 +23,8 @@ export const WeatherDisplay = ({ city, data, loading, error }) => {
 
 
             <div className="summary">
-            <p>High: N/A</p>
-            <p>Low: N/A</p>
+            <p>High: N/A°</p>
+            <p>Low: N/A°</p>
           </div>
 
           </div>
